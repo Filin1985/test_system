@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react';
 import styles from './styles.module.css';
 import Option from '../option/option';
 import {Button} from '../../ui-kit/button/button';
+import Completion from '../completion/completition';
+import {useNavigate} from 'react-router-dom';
+import {save} from '../../pages/questionPage/model';
 
 type QuestionsProps = {
   questions: Question[];
@@ -9,14 +12,24 @@ type QuestionsProps = {
 
 const Question = ({questions}: QuestionsProps) => {
   const [checkedAnswers, setCheckedAnswers] = useState<string[]>([]);
+  const [answers, setAnswers] = useState<Record<string, string[]>[]>([]);
   const [filteredQuestions, setFilteredQuestions] = useState<Question[]>([]);
   const [answered, setAnswered] = useState<boolean>(false);
 
+  const navigate = useNavigate();
+
   useEffect(() => {
-    setFilteredQuestions(questions);
+    const localQuestions = localStorage.getItem('filteredQuestions');
+    if (localQuestions) {
+      setFilteredQuestions(JSON.parse(localQuestions));
+    } else {
+      setFilteredQuestions(questions);
+    }
   }, [questions]);
 
-  const handleAnswer = () => {
+  const handleAnswer = (id: string) => {
+    const currentAnswers = [...answers, {[id]: [...checkedAnswers]}];
+    setAnswers(currentAnswers);
     setAnswered(true);
   };
 
@@ -31,13 +44,24 @@ const Question = ({questions}: QuestionsProps) => {
   };
 
   const handleNextQuestion = (id: string) => {
-    setFilteredQuestions((questions) =>
-      questions.filter((question) => question.id !== id)
+    const leftQuestions = filteredQuestions.filter(
+      (question) => question.id !== id
     );
+    setFilteredQuestions(leftQuestions);
+    localStorage.setItem('filteredQuestions', JSON.stringify(leftQuestions));
+    setAnswered(false);
+    setCheckedAnswers([]);
+    console.log(answers);
+    if (filteredQuestions.length === 1) {
+      localStorage.removeItem('filteredQuestions');
+      save(answers as any);
+      navigate('/statistic', {replace: true});
+    }
   };
 
   return (
     <>
+      <Completion filteredQuestions={filteredQuestions} />
       <h3 className={styles.title}>{filteredQuestions[0]?.question}</h3>
       <ul className={styles.answers}>
         {filteredQuestions[0]?.options.map((option, index) => (
@@ -45,6 +69,7 @@ const Question = ({questions}: QuestionsProps) => {
             key={index}
             handleCheck={handleCheck}
             option={option}
+            checked={checkedAnswers.includes(option)}
             answerType={
               filteredQuestions[0].answer.includes(option) ? 'right' : 'wrong'
             }
@@ -55,7 +80,7 @@ const Question = ({questions}: QuestionsProps) => {
       <Button
         htmlType='button'
         size='small'
-        onClick={handleAnswer}
+        onClick={() => handleAnswer(filteredQuestions[0].id)}
         disabled={checkedAnswers.length === 0 || answered}
       >
         Ответить
@@ -63,8 +88,9 @@ const Question = ({questions}: QuestionsProps) => {
       <Button
         htmlType='button'
         onClick={() => handleNextQuestion(filteredQuestions[0].id)}
+        disabled={!answered}
       >
-        Следующий вопрос
+        {filteredQuestions.length === 1 ? 'Завершить тест' : 'Продолжить'}
       </Button>
     </>
   );

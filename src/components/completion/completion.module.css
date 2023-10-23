@@ -1,0 +1,16 @@
+.percent {
+  font-size: 16px;
+  text-align: center;
+}
+
+.red {
+  color: var(--error);
+}
+
+.yellow {
+  color: var(--middle);
+}
+
+.green {
+  color: var(--right);
+}

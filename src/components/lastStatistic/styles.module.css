@@ -1,0 +1,25 @@
+.title {
+  font-size: 20px;
+  color: var(--border);
+}
+
+.right {
+  color: var(--right);
+}
+
+.middle {
+  color: var(--middle);
+}
+
+.error {
+  color: var(--error);
+}
+
+.text {
+  font-weight: bold;
+  color: inherit;
+}
+
+.total {
+  font-size: 32px;
+}

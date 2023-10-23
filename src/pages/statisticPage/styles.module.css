@@ -1,0 +1,17 @@
+.container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: var(--border);
+  text-align: center;
+}
+
+.results {
+  display: flex;
+  gap: 50px;
+}

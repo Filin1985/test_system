@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+# Проект "Тестовая система Do you know English?"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Снимок экрана 2023-07-04 в 22 33 15](https://github.com/Filin1985/giphy_project/assets/16574140/e8f76c51-0fd5-4790-81a2-743ad3a9c498)
 
-Currently, two official plugins are available:
+### Описание проекта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Проект представляет собой тестовую системы (пока из одного теста). В проекте вы можете пройти тест из 20 вопросов, после ответа система будет подсвечивать вам правильные и неправильные вопросы. Также после прохождения теста вы будете перекинуты на страницу с базовой статистикой по вашим предыдцщим попыткам и по текущей.
 
-## Expanding the ESLint configuration
+### Технологии
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[![My Skills](https://skillicons.dev/icons?i=typescript,react,html,css)](https://skillicons.dev)
+<a href="https://effector.dev" target="_blank" rel="noopener noreferrer">
+<img width="60" src="https://raw.githubusercontent.com/effector/effector/master/website/client/static/img/comet.svg" alt="Effector Comet Logo" />
+</a>
 
-- Configure the top-level `parserOptions` property like this:
+### Запуск проекта
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+1. Устанавливаем зависимости
+
+```
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Запускаем проект
+
+```
+npm run dev
+```

@@ -6,9 +6,16 @@ type Option = {
   option: string;
   answerType: string;
   answered: boolean;
+  checked: boolean;
 };
 
-const Option = ({handleCheck, option, answerType, answered}: Option) => {
+const Option = ({
+  handleCheck,
+  option,
+  answerType,
+  answered,
+  checked,
+}: Option) => {
   return (
     <li
       className={cn(styles.answer, {
@@ -16,12 +23,16 @@ const Option = ({handleCheck, option, answerType, answered}: Option) => {
         [styles.right]: answerType === 'right' && answered,
       })}
     >
-      <input
-        id={option}
-        type='checkbox'
-        onChange={handleCheck}
-        disabled={answered}
-      />
+      <label className={styles.checkbox}>
+        <input
+          id={option}
+          type='checkbox'
+          className={styles.checkbox_input}
+          onChange={handleCheck}
+          disabled={answered}
+          checked={checked}
+        />
+      </label>
       <p className={styles.text}>{option}</p>
     </li>
   );

@@ -1,0 +1,15 @@
+.attempts {
+  font-size: 18px;
+}
+
+.container {
+}
+
+.title {
+  font-size: 20px;
+  color: var(--border);
+}
+
+.text {
+  font-weight: bold;
+}

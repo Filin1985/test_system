@@ -2,6 +2,7 @@ import {Navigate, Route, Routes} from 'react-router-dom';
 import Layout from './layout/layout';
 import StartPage from './startPage/startPage';
 import QuestionPage from './questionPage/questionPage';
+import StatisticPage from './statisticPage/statisticPage';
 
 export function AppRoutes() {
   return (
@@ -10,6 +11,7 @@ export function AppRoutes() {
         <Route index element={<Navigate to='start' replace />} />
         <Route path='start' element={<StartPage />} />
         <Route path='test' element={<QuestionPage />} />
+        <Route path='statistic' element={<StatisticPage />} />
 
         <Route
           path='*'
