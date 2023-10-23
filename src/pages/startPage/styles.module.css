@@ -1,0 +1,22 @@
+.container {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 100px 0 0;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin: 20px 0 0;
+  font-size: 25px;
+}
+
+.name {
+  width: 100%;
+  margin: 100px 0 0;
+}

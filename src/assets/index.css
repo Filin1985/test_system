@@ -1,0 +1,29 @@
+@import url(./normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./variables.css);
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--background);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container_position_center {
+  align-items: center;
+}

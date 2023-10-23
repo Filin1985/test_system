@@ -1,0 +1,13 @@
+:root {
+  --text-form: #1ff2ff;
+  --primary: #3b48d0;
+  --gray: #636363;
+  --light-gray: #999;
+  --right: rgb(18, 252, 18);
+  --secondary: #0a1482;
+  --text: #fff;
+  --light-background: #efefef;
+  --error: #fd4646;
+  --background: #23263a;
+  --border: #a2cbfb;
+}

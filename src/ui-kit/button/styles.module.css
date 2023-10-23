@@ -1,0 +1,42 @@
+.button {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background: var(
+    --linear-2,
+    linear-gradient(180deg, var(--text-form) 0%, #27f9e5 52.66%, #2fffcd 100%)
+  );
+  color: var(--secondary);
+  margin-top: 70px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:focus-visible {
+  outline: none;
+}
+
+.button_size_small {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 20px;
+}
+.button_size_large {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 18px 36px;
+}
+
+.button_size_micro {
+  padding: 8px;
+}
+
+.button_disabled {
+  background: var(--gray);
+}
+
+.button_disabled:hover {
+  opacity: 1;
+}

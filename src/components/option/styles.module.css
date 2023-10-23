@@ -1,0 +1,16 @@
+.answer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.wrong {
+  border: 1px solid var(--error);
+}
+
+.right {
+  border: 1px solid var(--right);
+}

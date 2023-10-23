@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  font-size: 400;
+  font-style: normal;
+  font-weight: 13px;
+  line-height: normal;
+  width: 280px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--gradient, #15bffd);
+  background-color: rgba(255, 255, 255, 5%);
+  padding: 10px;
+}
+
+.input::placeholder {
+  color: var(--gray);
+}
+
+.input:focus-visible {
+  outline: none;
+}
+
+.error {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: var(--error);
+}
