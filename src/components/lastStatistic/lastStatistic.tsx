@@ -14,21 +14,21 @@ type LastStatisticProps = {
 const LastStatistic = ({results}: LastStatisticProps) => {
   return (
     <div>
-      <h4 className={styles.title}>Статистика по текущей попытке</h4>
+      <h4 className={styles.title}>Statistics for the current attempt</h4>
       <p className={styles.right}>
-        Верных ответов:{' '}
+        Correct answers:{' '}
         <span className={styles.text}>{results.fullAnswers}</span>
       </p>
       <p className={styles.middle}>
-        Частично верных ответов:{' '}
+        Partially correct answers:{' '}
         <span className={styles.text}>{results.partlyAnswers}</span>
       </p>
       <p className={styles.error}>
-        Неверных ответов:{' '}
+        Wrong answers:{' '}
         <span className={styles.text}>{results.incorrectAnswers}</span>
       </p>
       <p className={styles.percent}>
-        Общий процент верных значений слов и фраз:{' '}
+        Overall percentage of correct meanings of words and phrases:{' '}
         <span className={styles.total}>
           {results.totalPercent.toFixed(2) || 0} %
         </span>

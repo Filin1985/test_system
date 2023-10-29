@@ -17,7 +17,7 @@ export function AppRoutes() {
           path='*'
           element={
             <h1 className='text text_type_main-extra-large'>
-              Страница не найдена или её никогда не было
+              Page not found or never existed
             </h1>
           }
         />

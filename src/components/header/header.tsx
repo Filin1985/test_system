@@ -4,9 +4,9 @@ import styles from './styles.module.css';
 export const Header = () => {
   return (
     <nav className={styles.nav}>
-      <header className={styles.header}>Do you know English?</header>
+      <header className={styles.header}>¿Tu sabes español?</header>
       <Link className={styles.link} to='/statistic'>
-        Посмотреть статистику
+        View statistics
       </Link>
     </nav>
   );

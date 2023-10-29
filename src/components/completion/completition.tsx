@@ -32,7 +32,7 @@ const Completion = ({filteredQuestions}: CompletionProps) => {
         [styles[classType]]: classType,
       })}
     >
-      Вы прошли {percents}%
+      You passed {percents}%
     </p>
   );
 };

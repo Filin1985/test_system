@@ -18,13 +18,13 @@ const StartPage = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Тест</h2>
-      <p className={styles.subtitle}>Словарный запас</p>
+      <h2 className={styles.title}>Test</h2>
+      <p className={styles.subtitle}>Lexicon</p>
       <div className={styles.name}>
-        <h3>Введите ваше имя</h3>
+        <h3>Enter your name</h3>
         <Input title='name' value={name} onChange={handleChange} />
         <Button htmlType='button' size='small' onClick={handleClick}>
-          Начать
+          Begin
         </Button>
       </div>
     </div>

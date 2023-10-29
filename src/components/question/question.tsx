@@ -83,14 +83,14 @@ const Question = ({questions}: QuestionsProps) => {
         onClick={() => handleAnswer(filteredQuestions[0].id)}
         disabled={checkedAnswers.length === 0 || answered}
       >
-        Ответить
+        Answer
       </Button>
       <Button
         htmlType='button'
         onClick={() => handleNextQuestion(filteredQuestions[0].id)}
         disabled={!answered}
       >
-        {filteredQuestions.length === 1 ? 'Завершить тест' : 'Продолжить'}
+        {filteredQuestions.length === 1 ? 'Complete the test' : 'Continue'}
       </Button>
     </>
   );

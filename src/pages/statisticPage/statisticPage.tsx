@@ -48,19 +48,19 @@ const StatisticPage = () => {
   };
 
   if (!storedHistory) {
-    return <h1>Загружаем информацию...</h1>;
+    return <h1>Loading information...</h1>;
   }
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>Ваша стаститика</h3>
+      <h3 className={styles.title}>Your statistics</h3>
       <div className={styles.results}>
         <History storedHistory={storedHistory} />
         {storedAnswers.length > 0 && <LastStatistic results={results} />}
       </div>
 
       <Button htmlType='button' type='primary' onClick={handleTestAgain}>
-        Пройти еще раз
+        Go through again
       </Button>
     </div>
   );

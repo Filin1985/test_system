@@ -1,152 +1,152 @@
 [
   {
     "id": "1",
-    "question": "Как можно перевести слово 'to consider'?",
+    "question": "How can you translate the word 'subrayar'?",
     "options": [
-      "есть",
-      "летать",
-      "купаться",
-      "считать",
-      "бояться",
-      "учитывать",
-      "ехать",
-      "идти"
+      "to underline",
+      "to fly",
+      "to swim",
+      "to consider",
+      "to interact",
+      "to emphasize",
+      "to bring",
+      "to act"
     ],
-    "answer": ["считать", "летать"]
+    "answer": ["to underline", "to emphasize"]
   },
   {
     "id": "2",
-    "question": "Как можно перевести слово 'stance'?",
+    "question": "How can you translate the word 'la empresa'?",
     "options": [
-      "книга",
-      "станция",
-      "сопротивление",
-      "учение",
-      "ловкость",
-      "позиция",
-      "квартира",
-      "точка зрения"
+      "book",
+      "house",
+      "venture",
+      "school",
+      "company",
+      "stance",
+      "collocation",
+      "arrangement"
     ],
-    "answer": ["станция", "учение"]
+    "answer": ["company", "venture"]
   },
   {
     "id": "3",
-    "question": "Как можно перевести слово 'respite'?",
+    "question": "How can you translate the word 'cazador'?",
     "options": [
-      "передышка",
-      "луг",
-      "усталость",
-      "учение",
-      "корм",
-      "позиция",
-      "квартира",
-      "облегчение"
+      "college",
+      "case",
+      "venture",
+      "school",
+      "stalker",
+      "stance",
+      "hunter",
+      "arrangement"
     ],
-    "answer": ["передышка", "облегчение"]
+    "answer": ["hunter", "stalker"]
   },
   {
     "id": "4",
-    "question": "Как можно перевести слово 'to tinker'?",
+    "question": "How can you translate the word 'apañar'?",
     "options": [
-      "копать",
-      "купаться",
-      "возиться",
-      "бояться",
-      "чинить",
-      "ехать",
-      "бороться",
-      "идти"
+      "to underline",
+      "to fix",
+      "to swim",
+      "to consider",
+      "to try",
+      "to tinker",
+      "to bring",
+      "to clean"
     ],
-    "answer": ["возиться", "чинить"]
+    "answer": ["to fix", "to clean"]
   },
   {
     "id": "5",
-    "question": "Как можно перевести слово 'to deflect'?",
+    "question": "How can you translate the word 'embarcar'?",
     "options": [
-      "отвлечь",
-      "издеваться",
-      "возиться",
-      "отходить",
-      "чинить",
-      "ехать",
-      "бороться",
-      "уклониться"
+      "to load",
+      "to fly",
+      "to swim",
+      "to consider",
+      "to board",
+      "to tinker",
+      "to bring",
+      "to deflect"
     ],
-    "answer": ["отвлечь", "уклониться"]
+    "answer": ["to load", "to board"]
   },
   {
     "id": "6",
-    "question": "Как можно перевести слово 'intrinsic'?",
+    "question": "How can you translate the word 'asombroso'?",
     "options": [
-      "большой",
-      "грубый",
-      "присущий",
-      "важный",
-      "необходимый",
-      "великолепный",
-      "чуждый",
-      "внутренний"
+      "intrinsic",
+      "amazing",
+      "important",
+      "normal",
+      "remarkable",
+      "usual",
+      "nervous",
+      "inner"
     ],
-    "answer": ["присущий", "внутренний"]
+    "answer": ["amazing", "remarkable"]
   },
   {
     "id": "7",
-    "question": "Как можно перевести слово 'to elaborate'?",
+    "question": "How can you translate the word 'suspender'?",
     "options": [
-      "обитать",
-      "летать",
-      "предполагать",
-      "считать",
-      "разработать",
-      "учитывать",
-      "уточнить",
-      "выработать"
+      "to underline",
+      "to fly",
+      "to suspend",
+      "to consider",
+      "to elaborate",
+      "to halt",
+      "to bring",
+      "to fail"
     ],
-    "answer": ["разработать", "уточнить", "выработать"]
+    "answer": ["to suspend", "to halt", "to fail"]
   },
   {
     "id": "8",
-    "question": "Как можно перевести слово 'whimsical'?",
+    "question": "How can you translate the word 'extravagante'?",
     "options": [
-      "умный",
-      "грубый",
-      "причудливый",
-      "затейливый",
-      "необходимый",
-      "капризный",
-      "заботливый",
-      "внутренний"
+      "quirky",
+      "amazing",
+      "important",
+      "normal",
+      "remarkable",
+      "usual",
+      "nervous",
+      "whimsical"
     ],
-    "answer": ["причудливый", "капризный"]
+    "answer": ["quirky", "whimsical"]
   },
   {
     "id": "9",
-    "question": "Как можно перевести фраза 'hit the nail on the head'?",
+    "question": "Как можно перевести фраза 'tener mucha cara'?",
     "options": [
-      "провалиться сквозь землю",
-      "попасть в просак",
-      "потерять доверие",
-      "попасть в точку",
-      "ударить в грязь лицом",
-      "ударить под дых",
-      "быть на высоте",
-      "быть в плохом настроении"
+      "speak of the devil",
+      "have a lot of nerve",
+      "to cut corners",
+      "the best of both worlds",
+      "see eye to eye",
+      "to cost an arm and a leg",
+      "to feel under the weather",
+      "to kill two birds with one stone"
     ],
-    "answer": ["попасть в точку"]
+    "answer": ["have a lot of nerve"]
   },
   {
     "id": "10",
-    "question": "Как можно перевести слово 'wayside'?",
+    "question": "How can you translate the word 'cuneta'?",
     "options": [
-      "мотель",
-      "гостиница",
-      "обочина",
-      "второй план",
-      "ловкость",
-      "экспозиция",
-      "квартира",
-      "картина"
+      "gutter",
+      "case",
+      "venture",
+      "school",
+      "stalker",
+      "stance",
+      "hunter",
+      "wayside"
     ],
-    "answer": ["обочина", "второй план"]
+    "answer": ["wayside", "gutter"]
   }
 ]
